@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Appex.css">
+  <link rel="shortcut icon" href="./img/logos-appex/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Appex</title>
+</head>
+<body>
+
+  <div class="glow-orb one"></div>
+  <div class="glow-orb two"></div>
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <div class="nav-logo">Appex</div>
+      <ul class="nav-links">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#features">Por que Appex?</a></li>
+        <li><a href="https://github.com/Fredson-Sy" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- APPS -->
+  <section class="section-o" id="apps">
+    <p class="section-label">Biblioteca</p>
+    <h2 class="section-title">Apps</h2>
+    <p class="section-desc">
+      Cada app é desenvolvido com atenção aos detalhes e pensado para resolver problemas reais.
+    </p>
+
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="app-header">
+          <div class="app-icon">
+            <i class="fa-solid fa-display"></i>
+            <div class="app-meta">
+              <span class="app-name">ByteContron</span>
+              <span class="app-version">v0.5.0 Beta</span>
+            </div>
+          </div>
+          <span class="app-tag tag-beta">Beta</span>
+        </div>
+
+        <p class="app-desc">
+          <strong>Sistema completo de controle comercial</strong> — vendas, estoque, financeiro,
+          clientes, fornecedores e relatórios em PDF. Tudo offline, no seu computador.
+        </p>
+
+        <div class="app-tags">
+          <span class="chip chip-blue">Windows</span>
+          <span class="chip chip-purple">Offline</span>
+          <span class="chip chip-green">Grátis</span>
+        </div>
+
+        <div class="app-footer">
+          <span class="app-size">
+            <i class="fa-solid fa-computer"></i> Windows 10+ · ~85MB
+          </span>
+          <button class="btn-download" id="btnAbrirModal">
+            <i class="fa-solid fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FEATURES -->
+  <section class="section-t" id="features">
+    <p class="section-label">Por que Appex?</p>
+    <h2 class="section-title">Simples, direto, <strong>confiável</strong>.</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+        <p class="feature-title">100% Offline</p>
+        <p class="feature-desc">Seus dados ficam no seu computador. Nenhuma informação é enviada para a nuvem.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+        <p class="feature-title">Instalação rápida</p>
+        <p class="feature-desc">Baixe, instale e use em minutos. Sem configurações complicadas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-gear"></i></div>
+        <p class="feature-title">Feito com cuidado</p>
+        <p class="feature-desc">Cada app é desenvolvido pensando na experiência do usuário final.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-computer"></i></div>
+        <p class="feature-title">Windows nativo</p>
+        <p class="feature-desc">Apps construídos com Electron — roda em qualquer Windows 10 ou superior.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span>Appex</span> — Feito com ☕ e muitas linhas de código.</p>
+  </footer>
+
+  <!-- MODAL DE SENHA -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+
+      <button class="modal-fechar" id="btnFechar">✕</button>
+
+      <div class="modal-icone">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <h2 class="modal-titulo">Acesso restrito</h2>
+      <p class="modal-sub">Beta fechado. Digite a senha para liberar o download.</p>
+
+      <div class="modal-input-wrapper" id="inputWrapper">
+        <i class="fa-solid fa-key modal-input-icon"></i>
+        <input
+          type="password"
+          id="senhaInput"
+          class="modal-input"
+          placeholder="Digite a senha (10 caracteres)"
+          maxlength="10"
+        />
+        <button class="modal-olho" id="btnOlho">
+          <i class="fa-solid fa-eye" id="iconeOlho"></i>
+        </button>
+      </div>
+
+      <p class="modal-erro" id="modalErro"></p>
+
+      <button class="modal-btn" id="btnConfirmar">
+        <i class="fa-solid fa-unlock"></i> Liberar download
+      </button>
+
+    </div>
+  </div>
+
+  <script src="Appex.js"></script>
+</body>
+</html>
