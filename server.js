@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const SENHA_CORRETA = 'X8=5tfh7!1';
 
-const LINK_DOWNLOAD = 'https://github.com/Fredson-Sy/appex/releases/download/v0.5.0-beta/ByteContron-Setup.exe';
+const LINK_DOWNLOAD = 'https://github.com/Fredson-Sy/Appex/releases/download/v0.5.0-beta/ByteContron.Setup.0.5.0-Beta.exe';
 
 app.use(cors({
   origin: [
