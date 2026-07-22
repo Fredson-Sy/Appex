@@ -8,10 +8,10 @@ A landing page built to launch and distribute my own desktop apps — starting w
 
 ## 📸 Screenshot
 
-![Appex landing page]
+Appex landing page
 <p align="center">
-  <img src="img/screenshot-web-apps" width="48%">
-  <img src="img/screenshot-web-why-appex" width="48%">
+  <img src="img/logos-appex/screenshot-web-apps" width="48%">
+  <img src="img/logos-appex/screenshot-web-why-appex" width="48%">
 </p>
 
 ## ✨ Features
